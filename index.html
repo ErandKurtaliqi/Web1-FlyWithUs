@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly With Us</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/airplane-logo.png" alt="Airplane Logo" class="nav-logo">
+            <a href="index.html" class="logo-text">Fly With Us</a>
+        </div>
+        <div class="nav-links">
+            <a href="#booking">Book</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#why-us">Why Us</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Fly With Us</h1>
+            <p class="hero-subtitle">
+                Discover beautiful cities around the world with flexible tickets and great prices.
+            </p>
+            <a href="#booking" class="btn-primary">Start Booking</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- BOOKING SECTION -->
+        <section id="booking" class="booking-section">
+            <div class="booking-container">
+                <h2>Book Your Flight</h2>
+                <p class="section-subtitle">
+                    Fill in the details below and we’ll prepare the best offer for you.
+                </p>
+
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <input type="text" id="from" placeholder="Prishtina" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <input type="text" id="to" placeholder="Paris" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="depart">Departure Date</label>
+                            <input type="date" id="depart" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="return">Return Date</label>
+                            <input type="date" id="return">
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers">
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                                <option value="5">5+ Group</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-full">Book Now</button>
+                </form>
+
+                <p id="bookingSuccess" class="booking-success hidden"></p>
+            </div>
+
+            <div class="booking-info">
+                <h3>Why book with us?</h3>
+                <ul>
+                    <li>✔ 24/7 customer support</li>
+                    <li>✔ No hidden fees</li>
+                    <li>✔ Flexible changes on most tickets</li>
+                    <li>✔ Trusted by thousands of travelers</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- POPULAR DESTINATIONS -->
+        <section class="destinations" id="destinations">
+            <h2>Popular Destinations</h2>
+            <p class="section-subtitle">
+                Hand-picked cities with daily flights and great hotel packages.
+            </p>
+
+            <div class="cards">
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="img/destination1.jpg" alt="New York skyline">
+                    <div class="card-content">
+                        <h3>New York</h3>
+                        <p>
+                            Experience the city that never sleeps. Perfect for shopping, shows and unforgettable views.
+                        </p>
+                        <div class="card-details">
+                            <span>From <strong>$399</strong> return</span>
+                            <span>Direct flight – 9h</span>
+                        </div>
+                        <button class="card-btn" data-city="New York">View Deals</button>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="img/destination2.avif" alt="Paris Eiffel Tower">
+                    <div class="card-content">
+                        <h3>Paris</h3>
+                        <p>
+                            Romantic walks by the Seine, world-class museums and delicious food at every corner.
+                        </p>
+                        <div class="card-details">
+                            <span>From <strong>$299</strong> return</span>
+                            <span>Direct flight – 2h 30m</span>
+                        </div>
+                        <button class="card-btn" data-city="Paris">View Deals</button>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="img/destination3.webp" alt="Tokyo night lights">
+                    <div class="card-content">
+                        <h3>Tokyo</h3>
+                        <p>
+                            A perfect mix of tradition and technology. Temples, neon lights and amazing food.
+                        </p>
+                        <div class="card-details">
+                            <span>From <strong>$749</strong> return</span>
+                            <span>1 stop – 14h</span>
+                        </div>
+                        <button class="card-btn" data-city="Tokyo">View Deals</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- WHY US + STATS TABLE -->
+        <section id="why-us" class="summary-section">
+            <h2>Why Fly With Us</h2>
+            <p class="section-subtitle">
+                A quick overview of what you get when you book with Fly With Us.
+            </p>
+
+            <!-- tabela 1: përfitimet -->
+            <div class="summary-table-wrapper">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Benefit</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Best Prices</td>
+                            <td>We compare hundreds of airlines to always find you a fair price for your trip.</td>
+                        </tr>
+                        <tr>
+                            <td>Flexible Tickets</td>
+                            <td>Most of our fares allow you to change dates with little or no extra fee.</td>
+                        </tr>
+                        <tr>
+                            <td>Safe &amp; Reliable</td>
+                            <td>We work only with certified airlines and trusted partners worldwide.</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Support</td>
+                            <td>Our agents are available 24/7 to help you before and after your trip.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- tabela 2: statistika + mendime të shkurtra -->
+            <div class="summary-table-wrapper">
+                <table class="summary-table compact">
+                    <thead>
+                        <tr>
+                            <th>Traveler Stats</th>
+                            <th>What People Say</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>50+</strong> destinations<br>
+                                <strong>10K+</strong> bookings<br>
+                                <strong>4.9/5</strong> satisfaction score
+                            </td>
+                            <td>
+                                “Tickets arrived in my email in minutes and support helped me change the dates without any problem.” – Arben, Prishtina
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Average response time<br>
+                                &lt; 10 minutes on live chat
+                            </td>
+                            <td>
+                                “Great prices for New York. I will definitely book my next trip with them again.” – Elira, Tirana
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>© <span id="year"></span> Fly With Us. All rights reserved.</p>
+        <p>Made with ✈ for travelers who love discovering new places.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

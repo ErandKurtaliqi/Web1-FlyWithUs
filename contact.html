@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fly With Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/airplane-logo.png" alt="Airplane Logo" class="nav-logo">
+            <a href="index.html" class="logo-text">Fly With Us</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#booking">Book</a>
+            <a href="index.html#destinations">Destinations</a>
+            <a href="index.html#why-us">Why Us</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- CONTACT PAGE MAIN SECTION -->
+    <section class="contact-page">
+        <div class="contact-page-header">
+            <span class="contact-badge">Contact us</span>
+            <h1>Contact For Any Query</h1>
+        </div>
+
+        <div class="contact-layout">
+            <!-- KOLONA MAJTAS: INFO -->
+            <div class="contact-col contact-left">
+                <h2>Get In Touch</h2>
+                <p class="contact-left-text">
+                    Na shkruani për pyetje rreth fluturimeve, rezervimeve apo bashkëpunimeve.
+                    Ekipi ynë iu përgjigjet sa më shpejt që është e mundur.
+                </p>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon-box">📍</div>
+                    <div>
+                        <h3>Office</h3>
+                        <p>Rr. Shembull, Ferizaj, Kosovo</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon-box">📞</div>
+                    <div>
+                        <h3>Mobile</h3>
+                        <p>+383 49 123 456</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon-box">✉️</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>support@flywithus.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KOLONA NË MES: HARTA -->
+            <div class="contact-col contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24167.96865072345!2d-74.0131207!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3161a5a7ab%3A0x6b8b0d24dd47cebb!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- KOLONA DJATHTAS: FORMA ME FLOAT LABELS -->
+            <div class="contact-col contact-right">
+                <form class="contact-form-box">
+                    <div class="float-group">
+                        <span class="input-icon">👤</span>
+                        <input type="text" id="c-name" placeholder=" " required>
+                        <label for="c-name">Your Name</label>
+                    </div>
+
+                    <div class="float-group">
+                        <span class="input-icon">📧</span>
+                        <input type="email" id="c-email" placeholder=" " required>
+                        <label for="c-email">Your Email</label>
+                    </div>
+
+                    <div class="float-group">
+                        <span class="input-icon">📝</span>
+                        <input type="text" id="c-subject" placeholder=" ">
+                        <label for="c-subject">Subject</label>
+                    </div>
+
+                    <div class="float-group">
+                        <span class="input-icon">💬</span>
+                        <textarea id="c-message" placeholder=" "></textarea>
+                        <label for="c-message">Message</label>
+                    </div>
+
+                    <button class="button-modern" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (I NJEJTË SI NË INDEX) -->
+    <footer class="main-footer">
+        <p>© <span id="year"></span> Fly With Us. All rights reserved.</p>
+        <p>Made with ✈ for travelers who love discovering new places.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

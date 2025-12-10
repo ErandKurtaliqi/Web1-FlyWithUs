@@ -3,112 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - Fly With Us</title>
+<title>Rreth Nesh - Fly With Us</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-<div class="logo"><a href="index.html">Fly With Us</a></div>
- <div class="nav-links">
-            <a href="index.html#booking">Book</a>
-            <a href="index.html#destinations">Destinations</a>
-            <a href="index.html#why-us">Why Us</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </div>
-</nav>
-
-    <!-- HERO ABOUT -->
-    <section class="about-hero">
-        <div class="about-hero-text">
-            <span class="about-badge">Who we are</span>
-            <h1>About Us</h1>
-            <p class="about-lead">
-                Fly With Us është një platformë moderne për rezervimin e fluturimeve.
-                Ne të lidhim me destinacionet më të mira në botë – shpejt, thjesht dhe me siguri.
-            </p>
-
-            <ul class="about-list">
-                <li>Partneritete me linja ajrore të njohura</li>
-                <li>Çmime transparente dhe oferta sezonale</li>
-                <li>Mbështetje 24/7 për çdo pyetje ose ndryshim bilete</li>
-            </ul>
-
-            <div class="about-tags">
-                <span class="about-tag">+50 destinacione</span>
-                <span class="about-tag">Support 24/7</span>
-                <span class="about-tag">Rezervim në 3 hapa</span>
-            </div>
+ <!-- NAVIGATION -->
+     <nav class="navbar">
+        <div class="logo">
+            <img src="img/airplane-logo.png" alt="Airplane Logo" class="nav-logo">
+            <a href="index.html" class="logo-text">Fly With Us</a>
         </div>
 
-        <div class="about-hero-image">
-            <img src="img/airplane-bg.jpg" alt="Flying airplane">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </section>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#hero">Kryefaqja</a>
+            <a href="index.html#booking">Rezervo</a>
+            <a href="index.html#destinations">Destinacionet</a>
+            <a href="about.html">Rreth Nesh</a>
+            <a href="#about-form-box">Login / Regjistrohu</a>
+            <a href="contact.html">Kontakti</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
 
-    <!-- PSE NA ZGJEDHIN -->
-    <section class="about-features">
-        <h2>Pse klientët na zgjedhin?</h2>
-        <p class="about-features-subtitle">
-            Jo vetëm një biletë – por një eksperiencë udhëtimi e plotë.
+<!-- HERO ABOUT -->
+<section class="about-hero-bg">
+    <div class="hero-overlay">
+        <span class="about-badge">Kush jemi</span>
+        <h1>Udhëtime më të lehta, më të zgjuara</h1>
+        <p class="about-lead">
+            Fly With Us është një platformë moderne për rezervimin e fluturimeve.
+            Ne ju ndihmojmë të gjeni destinacionin ideal – shpejt, thjesht dhe me siguri.
         </p>
 
-        <div class="about-cards">
-            <div class="about-card">
-                <h3>Rezervim i shpejtë</h3>
-                <p>Plotëso vetëm disa fusha dhe gjej fluturimin ideal në pak sekonda.</p>
-            </div>
-            <div class="about-card">
-                <h3>Ofertat më të mira</h3>
-                <p>Krahasojmë qindra opsione për të gjetur kombinimin më të favorshëm për ju.</p>
-            </div>
-            <div class="about-card">
-                <h3>Mbështetje njerëzore</h3>
-                <p>Ekipi ynë është këtu për të të ndihmuar para, gjatë dhe pas fluturimit.</p>
-            </div>
+        <ul class="about-list">
+            <li>Partneritete me linja ajrore të besuara</li>
+            <li>Çmime transparente me oferta sezonale</li>
+            <li>Mbështetje 24/7 për çdo pyetje ose ndryshim bilete</li>
+        </ul>
+    </div>
+</section>
+
+
+    <!-- PSE NA ZGJEDHIN -->
+<section class="about-features">
+    <h2>Pse klientët na zgjedhin?</h2>
+    <p class="about-features-subtitle">
+        Jo vetëm një biletë – por një eksperiencë udhëtimi e plotë.
+    </p>
+
+    <div class="about-cards">
+        <div class="about-card">
+            <h3>Rezervim i shpejtë</h3>
+            <p>Plotëso vetëm disa fusha dhe gjej fluturimin ideal në pak sekonda.</p>
         </div>
-    </section>
+        <div class="about-card">
+            <h3>Ofertat më të mira</h3>
+            <p>Krahasojmë qindra opsione për të gjetur kombinimin më të favorshëm për ju.</p>
+        </div>
+        <div class="about-card">
+            <h3>Mbështetje njerëzore</h3>
+            <p>Ekipi ynë është këtu për t’ju ndihmuar para, gjatë dhe pas fluturimit.</p>
+        </div>
+    </div>
+</section>
 
     <!-- STATISTIKA -->
-    <section class="about-stats">
-        <div class="stat">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Destinacione</span>
-        </div>
-        <div class="stat">
-            <span class="stat-number">10K+</span>
-            <span class="stat-label">Rezervime</span>
-        </div>
-        <div class="stat">
-            <span class="stat-number">4.9/5</span>
-            <span class="stat-label">Kënaqësia e klientëve</span>
-        </div>
-    </section>
+<section class="about-stats">
+    <div class="stat">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Destinacione</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">10K+</span>
+        <span class="stat-label">Rezervime</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">4.9/5</span>
+        <span class="stat-label">Kënaqësia e klientëve</span>
+    </div>
+</section>
 
-    <!-- REGISTER / LOGIN FORM I BUKUR -->
-    <section class="about-form">
-        <div class="about-form-text">
-            <h2>Krijo llogarinë tënde</h2>
-            <p>
-                Regjistrohu falas për të ruajtur destinacionet e preferuara,
-                për të marrë oferta me email dhe për të menaxhuar rezervimet në një vend.
-            </p>
-            <ul class="about-list">
-                <li>Ruaj të dhënat e udhëtimit për përdorim të mëvonshëm</li>
-                <li>Merr njoftime për ulje çmimesh</li>
-                <li>Menaxho rezervimet në çdo pajisje</li>
-            </ul>
-        </div>
+    <!-- REGISTER / LOGIN FORM  -->
+<section class="about-form">
+    <div class="about-form-text">
+        <h2>Krijo llogarinë tënde</h2>
+        <p>
+            Regjistrohu falas për të ruajtur destinacionet e preferuara,
+            për të marrë oferta me email dhe për të menaxhuar rezervimet në një vend.
+        </p>
+        <ul class="about-list">
+            <li>Ruaj të dhënat e udhëtimit për përdorim të mëvonshëm</li>
+            <li>Merr njoftime për ulje çmimesh</li>
+            <li>Menaxho rezervimet në çdo pajisje</li>
+        </ul>
+    </div>
 
-        <div class="about-form-box">
-            <h3>Register / Login</h3>
-            <form>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button type="submit">Continue</button>
-            </form>
-        </div>
-    </section>
+    <div class="about-form-box" id="about-form-box">
+        <h3>Regjistrohu / Login</h3>
+        <form>
+            <input type="text" placeholder="Emri i Plotë">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Përdoruesi">
+            <input type="password" placeholder="Fjalëkalimi">
+            <button type="submit">Vazhdo</button>
+        </form>
+    </div>
+</section>
+<!-- FOOTER -->
+    <footer class="main-footer">
+        <p>© <span id="year"></span> Fly With Us. Të gjitha të drejtat e rezervuara.</p>
+         <p class="sub-footer">
+    <a href="#" >Privacy Policy</a> | 
+    <a href="#" >Terms & Conditions</a>
+  </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
